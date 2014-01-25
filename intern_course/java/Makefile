@@ -9,8 +9,12 @@ JC = javac
 	$(JC) $(JFLAGS) $*.java
 
 CLASSES = \
-		  Helloworld.java
+		  Helloworld.java \
+		  UniqueChar.java 
+		  #UniqueChar.java \
 
+
+#default target
 default: classes
 
 classes: $(CLASSES:.java=.class)
