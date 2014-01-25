@@ -5,22 +5,27 @@ CFLAGS = -Wall -c
 LFLAGS = 
 CC = gcc 
 
-PROG = helloworld
+PROG = helloworld reverse
 
 .SUFFIXES: .c .o
 
 .c.o:
 	$(CC) $(CFLAGS) $< -o $@
 
+default: all
+
+all: $(PROG)
+
 helloworld : helloworld.o
+	$(CC) $(LFLAGS) $< -o $@
+
+reverse : reverse.o
 	$(CC) $(LFLAGS) $< -o $@
 
 
 #default target
 
-default: all
 
-all: $(PROG)
 
 clean:
 	$(RM) *.o

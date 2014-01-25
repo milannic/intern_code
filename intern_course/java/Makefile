@@ -10,8 +10,9 @@ JC = javac
 
 CLASSES = \
 		  Helloworld.java \
-		  UniqueChar.java 
-		  #UniqueChar.java \
+		  UniqueChar.java \
+		  Permutation.java \
+		  ChangeSpace.java \
 
 
 #default target
