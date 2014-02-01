@@ -13,6 +13,7 @@ CLASSES = \
 		  UniqueChar.java \
 		  Permutation.java \
 		  ChangeSpace.java \
+		  Line_common.java \
 
 
 #default target
