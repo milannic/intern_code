@@ -14,6 +14,7 @@ public class UniqueChar{
 			return true;
 	}
 
+
 	public static boolean test2(String para_string){
 		if(para_string.length()>26) return false;
 		int bitarray = 0;

@@ -19,6 +19,7 @@ def evalRPN(tokens):
 						number2 = a.pop()
 						number1 = a.pop()
 						a.append(number1+number2)
+                                            
 				elif i == '-':
 					if len(a)<2 :
 						raise Exception("input error")
