@@ -14,6 +14,7 @@ CLASSES = \
 		  Permutation.java \
 		  ChangeSpace.java \
 		  Line_common.java \
+		  Jump.java \
 
 
 #default target
