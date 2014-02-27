@@ -15,6 +15,7 @@ CLASSES = \
 		  ChangeSpace.java \
 		  Line_common.java \
 		  Jump.java \
+		  WordBreak.java \
 
 
 #default target
