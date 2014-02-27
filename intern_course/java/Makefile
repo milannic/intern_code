@@ -1,12 +1,14 @@
 #define compiler and compiler flag variables
 
 JFLAGS = -g
+JOPFLAGS = -d
 JC = javac
+OUTPUTPATH = ./bin
 
 .SUFFIXES: .java .class
 
 .java.class:
-	$(JC) $(JFLAGS) $*.java
+	$(JC) $(JFLAGS) $*.java $(JOPFLAGS) $(OUTPUTPATH)
 
 CLASSES = \
 		  Helloworld.java \
@@ -16,6 +18,9 @@ CLASSES = \
 		  Line_common.java \
 		  Jump.java \
 		  WordBreak.java \
+		  WordBreak2.java \
+		  ReorderList.java \
+		  BinaryTreePreorderTraversal.java \
 
 
 #default target
@@ -24,5 +29,5 @@ default: classes
 classes: $(CLASSES:.java=.class)
 
 clean:
-	$(RM) *.class
+	$(RM) $(OUTPUTPATH)/*.class
 

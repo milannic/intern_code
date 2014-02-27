@@ -1,3 +1,3 @@
 #! /bin/bash
 
-java -cp . $1
+java -cp ./bin/ $1
