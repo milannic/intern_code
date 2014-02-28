@@ -22,6 +22,7 @@ CLASSES = \
 		  ReorderList.java \
 		  BinaryTreePreorderTraversal.java \
 		  BinaryTreePostorderTraversal.java \
+		  Sort.java \
 
 
 #default target
