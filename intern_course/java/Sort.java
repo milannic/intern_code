@@ -158,7 +158,7 @@ public class Sort{
 			System.out.println(ele);
 		}
 		System.out.println("===========================");
-		int[] c = {1,72,6,48,22,30,5,1};
+		int[] c = {1,72,2};
 		quickSort(c);
 		System.out.println("after quicksort sort");
 		for(int ele:c){
