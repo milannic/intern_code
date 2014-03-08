@@ -23,6 +23,15 @@ CLASSES = \
 		  BinaryTreePreorderTraversal.java \
 		  BinaryTreePostorderTraversal.java \
 		  Sort.java \
+		  LinkedListCycle.java \
+		  Candy.java \
+		  SingleNumber.java \
+		  GasStation.java \
+		  CopyListRandomP.java \
+		  WordsReverse.java \
+		  TwoSum.java \
+		  FindMedianSortedArrays.java \
+		  Triangle.java \
 
 
 #default target
@@ -31,5 +40,5 @@ default: classes
 classes: $(CLASSES:.java=.class)
 
 clean:
-	$(RM) $(OUTPUTPATH)/*.class
+	$(RM) *.class
 
