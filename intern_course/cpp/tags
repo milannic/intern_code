@@ -1,0 +1,14 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+CC	Makefile	/^CC = g++$/;"	m
+CFLAGS	Makefile	/^CFLAGS = -Wall -c$/;"	m
+LFLAGS	Makefile	/^LFLAGS = $/;"	m
+PROG	Makefile	/^PROG = helloworld $/;"	m
+Solution	helloworld.cpp	/^class Solution {$/;"	c	file:
+Solution::merge	helloworld.cpp	/^    void merge(int A[], int m, int B[], int n) {$/;"	f	class:Solution	access:public	signature:(int A[], int m, int B[], int n)
+main	helloworld.cpp	/^main ( int argc, char *argv[] )$/;"	f	signature:( int argc, char *argv[] )
+merge	helloworld.cpp	/^    void merge(int A[], int m, int B[], int n) {$/;"	f	class:Solution	access:public	signature:(int A[], int m, int B[], int n)
