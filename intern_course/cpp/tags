@@ -11,9 +11,12 @@ PROG	Makefile	/^PROG = helloworld $/;"	m
 Solution	helloworld.cpp	/^class Solution {$/;"	c	file:
 Solution::getRow	helloworld.cpp	/^    vector<int> getRow(int rowIndex) {$/;"	f	class:Solution	access:public	signature:(int rowIndex)
 Solution::hasPathSum	helloworld.cpp	/^    bool hasPathSum(TreeNode *root, int sum) {$/;"	f	class:Solution	access:public	signature:(TreeNode *root, int sum)
+Solution::isInterleave	helloworld.cpp	/^    bool isInterleave(string s1, string s2, string s3) {$/;"	f	class:Solution	access:public	signature:(string s1, string s2, string s3)
 Solution::ladderLength	helloworld.cpp	/^    int ladderLength(string start, string end, unordered_set<string> &dict) {$/;"	f	class:Solution	access:public	signature:(string start, string end, unordered_set<string> &dict)
 Solution::merge	helloworld.cpp	/^    void merge(int A[], int m, int B[], int n) {$/;"	f	class:Solution	access:public	signature:(int A[], int m, int B[], int n)
 Solution::pascalGenerate	helloworld.cpp	/^    vector<vector<int> > pascalGenerate(int numRows) {$/;"	f	class:Solution	access:public	signature:(int numRows)
+Solution::pathSum	helloworld.cpp	/^    vector<vector<int> > pathSum(TreeNode *root, int sum){$/;"	f	class:Solution	access:public	signature:(TreeNode *root, int sum)
+Solution::wordBreak	helloworld.cpp	/^    bool wordBreak(string s, unordered_set<string> &dict) {$/;"	f	class:Solution	access:public	signature:(string s, unordered_set<string> &dict)
 TreeNode	helloworld.cpp	/^  TreeNode(int x) : val(x), left(NULL), right(NULL) {}$/;"	f	struct:TreeNode	access:public	signature:(int x)
 TreeNode	helloworld.cpp	/^struct TreeNode {$/;"	s	file:
 TreeNode::TreeNode	helloworld.cpp	/^  TreeNode(int x) : val(x), left(NULL), right(NULL) {}$/;"	f	struct:TreeNode	access:public	signature:(int x)
@@ -22,10 +25,13 @@ TreeNode::right	helloworld.cpp	/^  TreeNode* right;$/;"	m	struct:TreeNode	file:	
 TreeNode::val	helloworld.cpp	/^  int val;$/;"	m	struct:TreeNode	file:	access:public
 getRow	helloworld.cpp	/^    vector<int> getRow(int rowIndex) {$/;"	f	class:Solution	access:public	signature:(int rowIndex)
 hasPathSum	helloworld.cpp	/^    bool hasPathSum(TreeNode *root, int sum) {$/;"	f	class:Solution	access:public	signature:(TreeNode *root, int sum)
+isInterleave	helloworld.cpp	/^    bool isInterleave(string s1, string s2, string s3) {$/;"	f	class:Solution	access:public	signature:(string s1, string s2, string s3)
 ladderLength	helloworld.cpp	/^    int ladderLength(string start, string end, unordered_set<string> &dict) {$/;"	f	class:Solution	access:public	signature:(string start, string end, unordered_set<string> &dict)
 left	helloworld.cpp	/^  TreeNode* left;$/;"	m	struct:TreeNode	file:	access:public
 main	helloworld.cpp	/^main ( int argc, char *argv[] )$/;"	f	signature:( int argc, char *argv[] )
 merge	helloworld.cpp	/^    void merge(int A[], int m, int B[], int n) {$/;"	f	class:Solution	access:public	signature:(int A[], int m, int B[], int n)
 pascalGenerate	helloworld.cpp	/^    vector<vector<int> > pascalGenerate(int numRows) {$/;"	f	class:Solution	access:public	signature:(int numRows)
+pathSum	helloworld.cpp	/^    vector<vector<int> > pathSum(TreeNode *root, int sum){$/;"	f	class:Solution	access:public	signature:(TreeNode *root, int sum)
 right	helloworld.cpp	/^  TreeNode* right;$/;"	m	struct:TreeNode	file:	access:public
 val	helloworld.cpp	/^  int val;$/;"	m	struct:TreeNode	file:	access:public
+wordBreak	helloworld.cpp	/^    bool wordBreak(string s, unordered_set<string> &dict) {$/;"	f	class:Solution	access:public	signature:(string s, unordered_set<string> &dict)

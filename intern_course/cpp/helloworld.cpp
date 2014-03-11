@@ -259,6 +259,97 @@ public:
 		}
 		return solutions;
 	}
+
+    bool isInterleave(string s1, string s2, string s3) {
+		return true;
+        
+    }
+    vector<string> wordBreakII(string s, unordered_set<string> &dict) {
+		vector<string> result;
+		int length = s.length();
+		if(s.empty()||dict.empty()){
+			return result;
+		}
+		int** dp_table;
+		dp_table = new int*[length];
+		for(int i=0;i<length;i++){
+			dp_table[i]=new int[length];
+		}
+		//this loop we find all the substring with length i+1
+		for(int i=0;i<length;i++){
+			//this loop we iterate all the position with substring length of i+1
+			for(int j=0;j+i<length;j++){
+				//cout<<s.substr(j,i+1)<<endl;
+				if(dict.find(s.substr(j,i+1))!=dict.end()){
+					dp_table[j][i] = 1;
+				}else{
+					for(int k=0;k<i;k++){
+						if(dp_table[j][j+k]==1&&dp_table[j+k+1][i-k-1]==1){
+							dp_table[j][i] = 1;
+							break;
+						}
+					}
+				}
+			}
+		}
+		if(dp_table[0][length-1]!=1){
+			return result;
+		}else{
+			wordBreakFindSolution(0,result,"",s,(int**)dp_table,dict);
+			return result;
+		}
+        
+    };
+	void wordBreakFindSolution(int index,vector<string>& result,string temp,const string& origin,int** dp_table,unordered_set<string> &dict){
+		if((unsigned)index!=origin.length()){
+			for(unsigned i=index;i<origin.length();i++){
+				if(dp_table[index][i-index]==1){
+					if(dict.find(origin.substr(index,i-index+1))!=dict.end()){
+						if(index==0){
+							wordBreakFindSolution(i+1,result,origin.substr(index,i-index+1),origin,dp_table,dict);
+						}else{
+							wordBreakFindSolution(i+1,result,temp+" "+origin.substr(index,i-index+1),origin,dp_table,dict);
+						}
+					}
+				}
+			}
+		}else{
+			//cout<<"i am here"<<endl;
+			result.push_back(temp);
+		}
+	}
+    bool wordBreakI(string s, unordered_set<string> &dict) {
+		int length = s.length();
+		if(s.empty()||dict.empty()){
+			return false;
+		}
+		if(dict.find(s)!=dict.end()){
+			return true;
+		}else{
+			int dp_table[length][length];
+			//this loop we find all the substring with length i+1
+			for(int i=0;i<length;i++){
+				//this loop we iterate all the position with substring length of i+1
+				for(int j=0;j+i<length;j++){
+					//cout<<s.substr(j,i+1)<<endl;
+					if(dict.find(s.substr(j,i+1))!=dict.end()){
+						dp_table[j][i] = 1;
+					}else{
+						for(int k=0;k<i;k++){
+							if(dp_table[j][j+k]==1&&dp_table[j+k+1][i-k-1]==1){
+								dp_table[j][i] = 1;
+								break;
+							}
+						}
+					}
+				}
+			}
+			if(dp_table[0][length-1]==1){
+				return true;
+			}
+		}
+		return false;
+    }
 };
 
 int
@@ -266,15 +357,14 @@ main ( int argc, char *argv[] )
 {
 	Solution* my_solution = new Solution();
 	// test of string
-	string start = "hit";
-	string end = "cog";
-	unordered_set<string> dict;
-	dict.insert("hot");
-	dict.insert("dot");
-	dict.insert("dog");
-	dict.insert("lot");
-	dict.insert("log");
-	cout<<my_solution->ladderLength(start,end,dict)<<endl;
+	string start = "ab";
+	unordered_set<string> my_dict;
+	my_dict.insert("a");
+	my_dict.insert("b");
+	vector<string> answer = my_solution->wordBreakII(start,my_dict);
+	for(auto i=answer.begin();i!=answer.end();i++){
+		cout<<*i<<endl;
+	}
 	return EXIT_SUCCESS;
 }				/* ----------  end of function main  ---------- */
 

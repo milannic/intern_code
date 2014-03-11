@@ -1,4 +1,4 @@
-cscope 15 $HOME/workspace/intern_code/intern_course/cpp               0000080062
+cscope 15 $HOME/workspace/intern_code/intern_course/cpp               0000082629
 	@/home/milannic/workspace/intern_code/intern_course/cpp/helloworld.cpp
 
 16 
@@ -10,22 +10,30 @@ cscope 15 $HOME/workspace/intern_code/intern_course/cpp               0000080062
 >
 
 18 
-	~<veùÜ
+	~<c¡dlib
 >
 
 19 
-	~<¡ack
+	~<veùÜ
 >
 
 20 
-	~<unÜd”ed_£t
+	~<¡ack
 >
 
 21 
+	~<unÜd”ed_£t
+>
+
+22 
 	~<unÜd”ed_m­
 >
 
-22 
+23 
+	~<queue
+>
+
+24 
 usšg
  
 Çme¥aû
@@ -33,27 +41,27 @@ usšg
 	g¡d
 ;
 
-31 
+33 
 	sT»eNode
  {
 
-32 
+34 
 	mv®
 ;
 
-33 
+35 
 T»eNode
 * 
 	mËá
 ;
 
-34 
+36 
 T»eNode
 * 
 	mright
 ;
 
-35 
+37 
 T»eNode
 (
 x
@@ -67,15 +75,15 @@ NULL
 right
 (NULL) {}
 
-38 şas 
+40 şas 
 	cSŞutiÚ
  {
 
-39 
+41 
 	mpublic
 :
 
-40 
+42 
 Ïdd”L’gth
 (
 ¡ršg
@@ -89,7 +97,179 @@ unÜd”ed_£t
 diù
 ) {
 
-44 
+43 if(
+	m¡¬t
+.
+Ëngth
+()!=
+’d
+.length()){
+
+46 
+	md•th
+ = 0;
+
+47 
+¡ršg
+ 
+	mcur
+;
+
+48 
+¡ršg
+ 
+	m‹mp_¡ršg
+;
+
+49 
+	mqueue
+<
+	m¡ršg
+> 
+	mBFS_queue
+;
+
+50 
+	munÜd”ed_m­
+<
+	m¡ršg
+,> 
+	mvis™
+;
+
+51 
+	mBFS_queue
+.
+push
+(
+¡¬t
+);
+
+52 
+	mvis™
+.
+š£¹
+(
+¡d
+::
+make_·œ
+(
+¡¬t
+,
+d•th
+));
+
+54 !
+	mBFS_queue
+.
+em±y
+()){
+
+57 
+	mcur
+ = 
+BFS_queue
+.
+äÚt
+();
+
+58 
+	mBFS_queue
+.
+pİ
+();
+
+59 
+	md•th
+ = 
+vis™
+.
+fšd
+(
+cur
+)->
+£cÚd
+;
+
+62 
+	mi
+=0;i<
+	mcur
+.
+Ëngth
+();i++){
+
+63 
+	mj
+=0;j<26;j++){
+
+64 
+	m‹mp_¡ršg
+ = 
+cur
+;
+
+65 
+	m‹mp_ch¬
+ = 'a' + 
+j
+;
+
+66 
+	m‹mp_¡ršg
+[
+i
+]=
+‹mp_ch¬
+;
+
+68 if(
+	m‹mp_¡ršg
+.
+com·»
+(
+’d
+)==0){ 
+d•th
++2;}
+
+69 if(
+	mvis™
+.
+fšd
+(
+‹mp_¡ršg
+)==
+vis™
+.
+’d
+(è&& 
+diù
+.find(temp_string)!=dict.end()){
+
+73 
+vis™
+.
+š£¹
+(
+¡d
+::
+make_·œ
+(
+‹mp_¡ršg
+,
+d•th
++1));
+
+74 
+	mBFS_queue
+.
+push
+(
+‹mp_¡ršg
+);
+
+83 
 	$m”ge
 (
 A
@@ -101,19 +281,19 @@ B
 n
 ) {
 
-45 
+84 
 šdex1
 =
 m
 -1;
 
-46 
+85 
 šdex2
 =
 n
 -1;
 
-47 if(
+86 if(
 NULL
 ==
 A
@@ -121,17 +301,17 @@ A
 B
 ){
 
-50 ià(0==
+89 ià(0==
 m
 ) {
 
-51  
+90  
 i
 =0; i<
 n
 ; i++ ) {
 
-52 
+91 
 A
 [
 i
@@ -139,7 +319,7 @@ i
 B
 [i];
 
-57 
+96 
 i
 =
 m
@@ -147,13 +327,13 @@ m
 n
 -1;i>=0;i--){
 
-58 if(
+97 if(
 šdex1
 <0 || 
 šdex2
 <0){;}
 
-59 if(
+98 if(
 A
 [
 šdex1
@@ -163,7 +343,7 @@ B
 šdex2
 ]){
 
-60 
+99 
 A
 [
 i
@@ -171,11 +351,11 @@ i
 šdex1
 ];
 
-61 
+100 
 šdex1
 --;
 
-64 
+103 
 A
 [
 i
@@ -185,19 +365,19 @@ B
 šdex2
 ];
 
-65 
+104 
 šdex2
 --;
 
-68 if(
+107 if(
 šdex1
 <0){
 
-69 ; 
+108 ; 
 šdex2
 >=0; index2--) {
 
-70 
+109 
 A
 [
 šdex2
@@ -205,11 +385,11 @@ A
 B
 [index2];
 
-75 
+114 
 	}
 }
 
-77 
+116 
 	gveùÜ
 <veùÜ<> > 
 	$·sÿlG’”©e
@@ -217,17 +397,17 @@ B
 numRows
 ) {
 
-78 
+117 
 veùÜ
 <veùÜ<> > 
 sŞutiÚ
 ;
 
-79 if(
+118 if(
 numRows
 !=0){
 
-80 
+119 
 veùÜ
 <>* 
 my_veùÜ
@@ -235,13 +415,13 @@ my_veùÜ
 Ãw
  vector<>();
 
-81 
+120 
 my_veùÜ
 ->
 	`push_back
 (1);
 
-82 
+121 
 sŞutiÚ
 .
 	`push_back
@@ -249,13 +429,13 @@ sŞutiÚ
 my_veùÜ
 ));
 
-83 
+122 
 i
 =1;i<
 numRows
 ;i++){
 
-84 
+123 
 my_veùÜ
  = 
 Ãw
@@ -263,35 +443,35 @@ my_veùÜ
 veùÜ
 <>();
 
-85 
+124 
 j
 =0;j<=
 i
 ;j++){
 
-86 if(
+125 if(
 j
 ==0){
 
-87 
+126 
 my_veùÜ
 ->
 	`push_back
 (1);
 
-88 }if(
+127 }if(
 j
 ==
 i
 ){
 
-89 
+128 
 my_veùÜ
 ->
 	`push_back
 (1);
 
-91 
+130 
 my_veùÜ
 ->
 	`push_back
@@ -305,7 +485,7 @@ i
 j
 -1)+solution.at(i-1).at(j));
 
-94 
+133 
 sŞutiÚ
 .
 	`push_back
@@ -313,15 +493,15 @@ sŞutiÚ
 my_veùÜ
 ));
 
-97  
+136  
 sŞutiÚ
 ;
 
-98 
+137 
 	}
 }
 
-100 
+139 
 	gveùÜ
 <> 
 	$g‘Row
@@ -329,89 +509,89 @@ sŞutiÚ
 rowIndex
 ) {
 
-101 
+140 
 veùÜ
 <> 
 sŞutiÚ
 ;
 
-102 if(
+141 if(
 rowIndex
 ==0){
 
-103 
+142 
 sŞutiÚ
 .
 	`push_back
 (1);
 
-105 if(
+144 if(
 rowIndex
 ==1){
 
-106 
+145 
 sŞutiÚ
 .
 	`push_back
 (1);
 
-107 
+146 
 sŞutiÚ
 .
 	`push_back
 (1);
 
-109 
+148 
 row1
 [
 rowIndex
 ];
 
-110 
+149 
 row2
 [
 rowIndex
 ];
 
-111 
+150 
 i
 =0;i<=
 rowIndex
 ;i++){
 
-112 if(
+151 if(
 i
 %2==0){
 
-113 
+152 
 j
 =0;j<=
 i
 ;j++){
 
-114 if(
+153 if(
 j
 ==0){
 
-115 
+154 
 row2
 [
 j
 ] = 1;
 
-116 }if(
+155 }if(
 j
 ==
 i
 ){
 
-117 
+156 
 row2
 [
 j
 ] = 1;
 
-119 
+158 
 row2
 [
 j
@@ -419,35 +599,35 @@ j
 row1
 [j-1]+row1[j];
 
-123 
+162 
 j
 =0;j<=
 i
 ;j++){
 
-124 if(
+163 if(
 j
 ==0){
 
-125 
+164 
 row1
 [
 j
 ] = 1;
 
-126 }if(
+165 }if(
 j
 ==
 i
 ){
 
-127 
+166 
 row1
 [
 j
 ] = 1;
 
-129 
+168 
 row1
 [
 j
@@ -455,17 +635,17 @@ j
 row2
 [j-1]+row2[j];
 
-134 if(
+173 if(
 rowIndex
 %2==0){
 
-135 
+174 
 i
 =0;i<=
 rowIndex
 ;i++){
 
-136 
+175 
 sŞutiÚ
 .
 	`push_back
@@ -475,13 +655,13 @@ row2
 i
 ]);
 
-139 
+178 
 i
 =0;i<=
 rowIndex
 ;i++){
 
-140 
+179 
 sŞutiÚ
 .
 	`push_back
@@ -491,15 +671,15 @@ row1
 i
 ]);
 
-145  
+184  
 sŞutiÚ
 ;
 
-146 
+185 
 	}
 }
 
-149 
+188 
 boŞ
  
 	$hasP©hSum
@@ -511,17 +691,17 @@ roÙ
 sum
 ) {
 
-150 if(
+189 if(
 roÙ
 ==
 NULL
 ){
 
-151  
+190  
 çl£
 ;
 
-154 
+193 
 ‹mp_sum
 =
 roÙ
@@ -529,7 +709,7 @@ roÙ
 v®
 ;
 
-155 
+194 
 T»eNode
 * 
 ´evious
@@ -537,7 +717,7 @@ T»eNode
 NULL
 ;
 
-156 
+195 
 T»eNode
 * 
 cur
@@ -545,7 +725,7 @@ cur
 NULL
 ;
 
-157 
+196 
 ¡ack
 <
 T»eNode
@@ -553,7 +733,7 @@ T»eNode
 my_¡ack
 ;
 
-158 
+197 
 my_¡ack
 .
 	`push
@@ -561,13 +741,13 @@ my_¡ack
 roÙ
 );
 
-159 !
+198 !
 my_¡ack
 .
 	`em±y
 ()){
 
-160 
+199 
 cur
  = 
 my_¡ack
@@ -575,7 +755,7 @@ my_¡ack
 	`tİ
 ();
 
-161 if(
+200 if(
 ‹mp_sum
 ==
 sum
@@ -589,11 +769,11 @@ NULL
 right
 ==NULL){
 
-162  
+201  
 Œue
 ;
 
-165 if(
+204 if(
 cur
 ->
 Ëá
@@ -605,7 +785,7 @@ NULL
 right
  && cur->right != NULL))){
 
-166 
+205 
 my_¡ack
 .
 	`push
@@ -615,7 +795,7 @@ cur
 Ëá
 );
 
-167 
+206 
 ‹mp_sum
  +ğ
 cur
@@ -625,7 +805,7 @@ cur
 v®
 ;
 
-169 }if(
+208 }if(
 cur
 ->
 right
@@ -635,7 +815,7 @@ NULL
 ´evious
  != cur->right){
 
-170 
+209 
 my_¡ack
 .
 	`push
@@ -645,7 +825,7 @@ cur
 right
 );
 
-171 
+210 
 ‹mp_sum
  +ğ
 cur
@@ -655,7 +835,7 @@ right
 v®
 ;
 
-173 
+212 
 ‹mp_sum
  -ğ
 cur
@@ -663,7 +843,7 @@ cur
 v®
 ;
 
-174 
+213 
 ´evious
  = 
 my_¡ack
@@ -671,21 +851,443 @@ my_¡ack
 	`tİ
 ();
 
-175 
+214 
 my_¡ack
 .
 	`pİ
 ();
 
-178  
+217  
 çl£
 ;
 
-180 
+219 
 	}
 }
 
-184 
+221 
+	gveùÜ
+<veùÜ<> > 
+	$·thSum
+(
+T»eNode
+ *
+roÙ
+, 
+sum
+){
+
+222 
+veùÜ
+<veùÜ <> > 
+sŞutiÚs
+;
+
+223 if(
+roÙ
+==
+NULL
+){
+
+227 
+veùÜ
+<>* 
+‹mp_sŞutiÚ
+ = 
+Ãw
+ vector<>();
+
+228 
+veùÜ
+<>* 
+‹mp_sŞutiÚ2
+=
+NULL
+;
+
+229 
+‹mp_sum
+=
+roÙ
+->
+v®
+;
+
+230 
+T»eNode
+* 
+´evious
+=
+NULL
+;
+
+231 
+T»eNode
+* 
+cur
+=
+NULL
+;
+
+232 
+¡ack
+<
+T»eNode
+*> 
+my_¡ack
+;
+
+233 
+my_¡ack
+.
+	`push
+(
+roÙ
+);
+
+234 
+‹mp_sŞutiÚ
+->
+	`push_back
+(
+roÙ
+->
+v®
+);
+
+235 !
+my_¡ack
+.
+	`em±y
+()){
+
+236 
+cur
+ = 
+my_¡ack
+.
+	`tİ
+();
+
+237 if(
+‹mp_sum
+==
+sum
+ && 
+cur
+->
+Ëá
+==
+NULL
+ && cur->
+right
+==NULL){
+
+238 
+‹mp_sŞutiÚ2
+ = 
+Ãw
+ 
+veùÜ
+<>();
+
+239 *
+‹mp_sŞutiÚ2
+ = *
+‹mp_sŞutiÚ
+;
+
+240 
+sŞutiÚs
+.
+	`push_back
+(*
+‹mp_sŞutiÚ2
+);
+
+243 if(
+cur
+->
+Ëá
+!=
+NULL
+ && 
+´evious
+!=cur->Ëá && (!Õ»viou =ğcur->
+right
+ && cur->right != NULL))){
+
+244 
+my_¡ack
+.
+	`push
+(
+cur
+->
+Ëá
+);
+
+245 
+‹mp_sŞutiÚ
+->
+	`push_back
+(
+cur
+->
+Ëá
+->
+v®
+);
+
+246 
+‹mp_sum
+ +ğ
+cur
+->
+Ëá
+->
+v®
+;
+
+248 }if(
+cur
+->
+right
+!=
+NULL
+ && 
+´evious
+ != cur->right){
+
+249 
+my_¡ack
+.
+	`push
+(
+cur
+->
+right
+);
+
+250 
+‹mp_sum
+ +ğ
+cur
+->
+right
+->
+v®
+;
+
+251 
+‹mp_sŞutiÚ
+->
+	`push_back
+(
+cur
+->
+right
+->
+v®
+);
+
+253 
+‹mp_sum
+ -ğ
+cur
+->
+v®
+;
+
+254 
+‹mp_sŞutiÚ
+->
+	`pİ_back
+();
+
+255 
+´evious
+ = 
+my_¡ack
+.
+	`tİ
+();
+
+256 
+my_¡ack
+.
+	`pİ
+();
+
+260  
+sŞutiÚs
+;
+
+261 
+	}
+}
+
+263 
+boŞ
+ 
+	$isIÁ”Ëave
+(
+¡ršg
+ 
+s1
+, sŒšg 
+s2
+, sŒšg 
+s3
+) {
+
+264  
+Œue
+;
+
+266 
+	}
+}
+
+303 
+boŞ
+ 
+wÜdB»ak
+(
+¡ršg
+ 
+s
+, 
+unÜd”ed_£t
+<¡ršg> &
+diù
+) {
+
+304 
+	gËngth
+ = 
+s
+.
+Ëngth
+();
+
+305 if(
+	gs
+.
+em±y
+()||
+	gdiù
+.empty()){
+
+306  
+	gçl£
+;
+
+308 if(
+	gdiù
+.
+fšd
+(
+s
+)!=
+diù
+.
+’d
+()){
+
+309  
+Œue
+;
+
+311 
+	gdp_bË
+[
+Ëngth
+][length];
+
+313 
+	gi
+=0;i<
+	gËngth
+;i++){
+
+315 
+	gj
+=0;j+
+	gi
+<
+	gËngth
+;j++){
+
+316 if(
+	gdiù
+.
+fšd
+(
+s
+.
+sub¡r
+(
+j
+,
+i
++1))!=
+diù
+.
+’d
+()){
+
+317 
+dp_bË
+[
+j
+][
+i
+] = 1;
+
+319 
+	gk
+=0;
+	gj
++k<j+
+	gi
+;k++){
+
+320 if(
+	gdp_bË
+[
+j
+][
+k
+]==1&&
+dp_bË
+[k+1][
+i
+]==1){
+
+321 
+dp_bË
+[
+j
+][
+i
+] = 1;
+
+328 if(
+	gdp_bË
+[0][
+Ëngth
+-1]){
+
+329  
+	gŒue
+;
+
+332  
+	gçl£
+;
+
+340 
 	$maš
  ( 
 ¬gc
@@ -693,7 +1295,7 @@ my_¡ack
 ¬gv
 [] )
 
-186 
+342 
 SŞutiÚ
 * 
 my_sŞutiÚ
@@ -703,91 +1305,37 @@ my_sŞutiÚ
 	`SŞutiÚ
 ();
 
-187 
-¡ack
+344 
+¡ršg
+ 
+¡¬t
+ = "a";
+
+345 
+unÜd”ed_£t
 <
-T»eNode
+¡ršg
 > 
-my_¡ack
+my_diù
 ;
 
-188 
-T»eNode
-* 
-Œ“1
- = 
-Ãw
- 
-	`T»eNode
-(1);
+346 
+my_diù
+.
+	`š£¹
+("b");
 
-189 
-T»eNode
-* 
-Œ“2
- = 
-Ãw
- 
-	`T»eNode
-(-2);
-
-190 
-T»eNode
-* 
-Œ“3
- = 
-Ãw
- 
-	`T»eNode
-(3);
-
-191 
-Œ“1
-->
-Ëá
- = 
-Œ“2
-;
-
-192 
-Œ“1
-->
-right
- = 
-Œ“3
-;
-
-193 
-cout
-<<()<<
-’dl
-;
-
-194 
-cout
-<<(*)<<
-’dl
-;
-
-195 
-¡d
-::
+347 
 cout
 <<
 my_sŞutiÚ
 ->
-	`hasP©hSum
-(
-Œ“1
-,2)<<
-’dl
-;
 
-196  
+348  
 EXIT_SUCCESS
 ;
 
-197 
+349 
 	}
 }
 
