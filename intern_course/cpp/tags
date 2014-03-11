@@ -5,10 +5,27 @@
 !_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
 !_TAG_PROGRAM_VERSION	5.8	//
 CC	Makefile	/^CC = g++$/;"	m
-CFLAGS	Makefile	/^CFLAGS = -Wall -c$/;"	m
+CFLAGS	Makefile	/^CFLAGS = -Wall -c -std=c++0x$/;"	m
 LFLAGS	Makefile	/^LFLAGS = $/;"	m
 PROG	Makefile	/^PROG = helloworld $/;"	m
 Solution	helloworld.cpp	/^class Solution {$/;"	c	file:
+Solution::getRow	helloworld.cpp	/^    vector<int> getRow(int rowIndex) {$/;"	f	class:Solution	access:public	signature:(int rowIndex)
+Solution::hasPathSum	helloworld.cpp	/^    bool hasPathSum(TreeNode *root, int sum) {$/;"	f	class:Solution	access:public	signature:(TreeNode *root, int sum)
+Solution::ladderLength	helloworld.cpp	/^    int ladderLength(string start, string end, unordered_set<string> &dict) {$/;"	f	class:Solution	access:public	signature:(string start, string end, unordered_set<string> &dict)
 Solution::merge	helloworld.cpp	/^    void merge(int A[], int m, int B[], int n) {$/;"	f	class:Solution	access:public	signature:(int A[], int m, int B[], int n)
+Solution::pascalGenerate	helloworld.cpp	/^    vector<vector<int> > pascalGenerate(int numRows) {$/;"	f	class:Solution	access:public	signature:(int numRows)
+TreeNode	helloworld.cpp	/^  TreeNode(int x) : val(x), left(NULL), right(NULL) {}$/;"	f	struct:TreeNode	access:public	signature:(int x)
+TreeNode	helloworld.cpp	/^struct TreeNode {$/;"	s	file:
+TreeNode::TreeNode	helloworld.cpp	/^  TreeNode(int x) : val(x), left(NULL), right(NULL) {}$/;"	f	struct:TreeNode	access:public	signature:(int x)
+TreeNode::left	helloworld.cpp	/^  TreeNode* left;$/;"	m	struct:TreeNode	file:	access:public
+TreeNode::right	helloworld.cpp	/^  TreeNode* right;$/;"	m	struct:TreeNode	file:	access:public
+TreeNode::val	helloworld.cpp	/^  int val;$/;"	m	struct:TreeNode	file:	access:public
+getRow	helloworld.cpp	/^    vector<int> getRow(int rowIndex) {$/;"	f	class:Solution	access:public	signature:(int rowIndex)
+hasPathSum	helloworld.cpp	/^    bool hasPathSum(TreeNode *root, int sum) {$/;"	f	class:Solution	access:public	signature:(TreeNode *root, int sum)
+ladderLength	helloworld.cpp	/^    int ladderLength(string start, string end, unordered_set<string> &dict) {$/;"	f	class:Solution	access:public	signature:(string start, string end, unordered_set<string> &dict)
+left	helloworld.cpp	/^  TreeNode* left;$/;"	m	struct:TreeNode	file:	access:public
 main	helloworld.cpp	/^main ( int argc, char *argv[] )$/;"	f	signature:( int argc, char *argv[] )
 merge	helloworld.cpp	/^    void merge(int A[], int m, int B[], int n) {$/;"	f	class:Solution	access:public	signature:(int A[], int m, int B[], int n)
+pascalGenerate	helloworld.cpp	/^    vector<vector<int> > pascalGenerate(int numRows) {$/;"	f	class:Solution	access:public	signature:(int numRows)
+right	helloworld.cpp	/^  TreeNode* right;$/;"	m	struct:TreeNode	file:	access:public
+val	helloworld.cpp	/^  int val;$/;"	m	struct:TreeNode	file:	access:public

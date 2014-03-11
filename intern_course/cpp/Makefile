@@ -1,7 +1,7 @@
 #define compiler and compiler flag variables
 
 
-CFLAGS = -Wall -c
+CFLAGS = -Wall -c -std=c++0x
 LFLAGS = 
 CC = g++
 
